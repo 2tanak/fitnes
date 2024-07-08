@@ -24,19 +24,19 @@ class AdminSeeder extends Seeder
 			'email_verified_at' => now(),
             'password' => 12345678,
         ]);
-		  $user->assignRole('admin');
+		  //$user->assignRole('admin');
         }
 		
 		
 		
-		$role_admin = Role::findByName('admin');
-		$role_admin->givePermissionTo('read blog');
-		$role_admin->givePermissionTo('add blog');
-		$role_admin->givePermissionTo('update blog');
-		$role_admin->givePermissionTo('delete blog');
-		$role_admin->givePermissionTo('read role');
-        $role_admin->givePermissionTo('update role');
-		$role_admin->givePermissionTo('add role');
-		$role_admin->givePermissionTo('delete role');
+		//$role_admin = Role::findByName('admin');
+		//$role_admin->givePermissionTo('read blog');
+		//$role_admin->givePermissionTo('add blog');
+		//$role_admin->givePermissionTo('update blog');
+		//$role_admin->givePermissionTo('delete blog');
+		//$role_admin->givePermissionTo('read role');
+        //$role_admin->givePermissionTo('update role');
+		//$role_admin->givePermissionTo('add role');
+		//$role_admin->givePermissionTo('delete role');
     }
 }

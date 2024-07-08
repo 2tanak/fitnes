@@ -24,6 +24,7 @@ class UploadPhoto
     public static function upload($file)
     {
 		
+
         $dir       = sprintf('/%s/%s', '/images/original', Carbon::now()->format('Y/m/d'));
         $disk = 'public';
         $path = $file->store($dir, $disk);

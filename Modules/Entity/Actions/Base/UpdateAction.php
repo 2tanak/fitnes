@@ -17,7 +17,7 @@ class UpdateAction {
     function __construct(Model $model, Request $request){
 		
         $this->model = $model; 
-        $this->request = $request->validated(); 
+        $this->request = $request; 
     }
 
     function run(){
@@ -28,13 +28,14 @@ class UpdateAction {
 
     private function saveMain(){
 	     
-     
-		$this->model->fill($this->request);
+        
+		$this->model->fill($this->request->all());
 		$this->model->save();
 		if(!empty($this->request->photo)){
 			
 	    $name = array_keys($this->request->file())[0];
 		if ($this->request->has($name)){
+			/*
 		  $file = $this->model->files->small;
 		  
 		  if(isset($file->id)){
@@ -43,8 +44,9 @@ class UpdateAction {
 			Storage::disk('public')->delete($file->large);
 			$this->model->files()->delete();
 		  }
-		  
+		  */
 			$file = UploadPhoto::upload($this->request->{$name});
+			
 			$file->fileable()->associate($this->model)->save();
 		    }
 		}

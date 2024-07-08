@@ -16,9 +16,15 @@ return new class extends Migration {
             $table->string('path', 255)->nullable();
             $table->string('mime_type', 255)->nullable();
             $table->text('dir')->nullable();
+			$table->string('large',255)->nullable();
+			$table->string('original',255)->nullable();
+			$table->string('medium',255)->nullable();
+			$table->string('small',255)->nullable();
             $table->text('description')->nullable();
+			$table->string('extension',255)->nullable();
             $table->text('name')->nullable();
             $table->integer('size')->nullable();
+			$table->morphs('fileable');
             $table->timestamps();
 
 

@@ -8,15 +8,23 @@ use RealRashid\SweetAlert\Facades\Alert;
 
 use App\Models\User;
 
-use Modules\Admin\App\Http\Requests\RoleRequest;
+
 
 
 trait MainCreateMethod
 {
 	
-	public function store(RoleRequest $request){
+	public function store(Request $request){
 		
+		 $validator = $this->validator($request->all());
+		if ($validator->fails()) {
+			//dd($request->all());
+				Alert::error('Validation errors', 'Check the fields');
+				return redirect()->back()->withErrors($validator);
+			};
+		//$request = $validator->validated();
 		$action = new $this->action_create(new $this->def_model(), $request);
+		
 		try {
 			$action->run();
 		} catch (\Exception $e) {

@@ -15,12 +15,7 @@ trait MainUpdateMethod  {
 		
 		//dd($item->getPermissionAr());
 		
-		$user = auth()->user();
-		if($user->hasDirectPermission('read blog')){
-			//dd(100);
-		}else{
-			//dd(200);
-		}
+	
 		//dd($item);
 		$general = false;
 		
@@ -50,9 +45,14 @@ trait MainUpdateMethod  {
 			'model' => $item
 		]);
 	}
-	public function update(RoleRequest $request, ModelParent $item)
+	public function update(Request $request, ModelParent $item)
 	{
-		
+		$validator = $this->validator($request->all());
+		if ($validator->fails()) {
+			//dd($request->all());
+				Alert::error('Validation errors', 'Check the fields');
+				return redirect()->back()->withErrors($validator);
+			};
 		if (CurrentLang::get() && CurrentLang::get() != 'ru') {
 			
 			

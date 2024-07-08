@@ -28,7 +28,7 @@ class RoleRequest extends FormRequest
      */
     public function rules(): array
     {
-		
+		dd(11111);
         $rules = [
             'name'    => ['required', 'string','min:3'],
 			'slug'    => ['sometimes','required', 'string','min:3'],
