@@ -1,0 +1,11 @@
+
+ {   
+    "line": "Please click the button below to verify your email address.",
+	"hello":"Hello!",
+	"buttonText":"Verify Email Address",
+	"text":"If you're having trouble clicking the button, copy and paste the URL below",
+    "browswer":"into your web browser:",
+	"did":"If you did not create an account, no further action is required."
+
+}
+
