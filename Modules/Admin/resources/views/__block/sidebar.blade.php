@@ -26,6 +26,64 @@
 	
 	
 	
+	  <div class="sidebar-category sidebar-category-visible">
+            <div class="category-content no-padding">
+                <ul class="navigation navigation-main navigation-accordion">
+	
+	 
+	
+	
+	
+	
+	    
+    <li style="">
+       <a   style="" href="#">
+	   <i class="icon-city"></i>
+	   <span>Пользователи
+	   </span></a>
+	     <ul class="hidden-ul">
+		
+	      <li>
+            <a href="{{route('user.index')}}">
+	          <span>Пользователи </span>
+	        </a>
+	      </li>
+		
+		  
+		  
+		  
+		 
+          </ul>
+		  
+		  
+		  
+       </li>
+	 
+	 <li style="">
+       <a   style="" href="#">
+	   <i class="icon-city"></i>
+	   <span>Роли
+	   </span></a>
+	     <ul class="hidden-ul">
+		   <li>
+              <a href="{{route('role.index')}}">
+	            <span>роли </span>
+	           </a>
+	        </li>
+		
+		 
+          </ul>
+		  
+		  
+		  
+       </li>
+	
+	
+	  
+	</ul>
+	</div>
+	
+	</div>
 	
 	
 	
