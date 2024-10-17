@@ -33,24 +33,28 @@
 	 
 	
 	
-	
 	  <li style="">
        <a   style="" href="#">
 	   <i class="icon-city"></i>
-	   <span>Блог
+	   <span>графика
 	   </span></a>
 	     <ul class="hidden-ul">
 		
 	      <li>
-            <a href="{{route('blog.index')}}">
-	          <span>Статьи </span>
+            <a href="{{route('charline')}}">
+	          <span>линейная </span>
 	        </a>
 	      </li>
 		 
+		   <li>
+            <a href="{{route('charkrug')}}">
+	          <span>круговая </span>
+	        </a>
+	      </li>
+		 
+		
           </ul>
        </li>
-	    
-    
 	 
 	
 	
