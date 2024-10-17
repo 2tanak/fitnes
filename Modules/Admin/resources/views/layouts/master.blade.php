@@ -55,6 +55,7 @@ button{
 	   @include('admin::__block.page_header')
 	    @include('sweetalert::alert')
 	       <div class="content">
+		      @include('sweetalert::alert')
 		       @yield('content')
 					@yield('left_lang')
                     
