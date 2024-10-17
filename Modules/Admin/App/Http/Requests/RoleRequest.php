@@ -34,10 +34,14 @@ class RoleRequest extends FormRequest
 			'slug'    => ['sometimes','required', 'string','min:3'],
             "permissions.*"  => "sometimes|required|integer|distinct",
 			"roles.*"  => "sometimes|required|integer|distinct",
-
+            
         ];
 
-       
+         if (Route::currentRouteName() === 'user.store') {
+			$rules['email']  = ['required', 'unique:users','email'];
+			$rules['password']= ['required', 'string', 'min:8','confirmed'];
+			
+		}
 
         return $rules;
     }

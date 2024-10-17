@@ -38,6 +38,7 @@
 							<td>{{$i->name }}</td>
 							<td>{{$i->email }}</td>
 							
+						
 							<td>
 							
 								<div class="btn-group">

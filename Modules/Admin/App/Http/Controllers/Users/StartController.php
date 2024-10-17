@@ -7,7 +7,7 @@ use Illuminate\Http\Request;
 use Illuminate\Routing\Controller;
 use Modules\Admin\Traits\MainCrudMethod;
 
-use Modules\Entity\Actions\Base\UpdateAction as ModelCreateAction;
+use Modules\Entity\Actions\Users\UpdateAction as ModelCreateAction;
 use Modules\Entity\Actions\Users\UpdateAction as ModelUpdateAction;
 use Modules\Entity\Actions\MainSaveAction as ModelSaveLangAction;
 use Modules\Entity\Actions\Users\DeleteAction as ModelDeleteAction;

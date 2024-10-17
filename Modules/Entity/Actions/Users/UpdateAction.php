@@ -17,9 +17,10 @@ class UpdateAction {
     }
 
     function run(){
-		
+	
        $this->saveMain();
 	   if($this->request->has('roles')){
+		  
 		  $this->roles_save();
 	   }
     }

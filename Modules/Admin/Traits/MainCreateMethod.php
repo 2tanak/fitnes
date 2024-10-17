@@ -18,13 +18,15 @@ trait MainCreateMethod
 		
 		$action = new $this->action_create(new $this->def_model(), $request);
 		try {
+			
 			$action->run();
 		} catch (\Exception $e) {
-			Alert::error('Errors', $e->getMessage());
+			//dd(170);
+			//Alert::error('Errors', $e->getMessage());
             return redirect()->back()->with('error', $e->getMessage());
 		}
 		
-		Alert::success('success', 'Успешно создано');
+		//Alert::success('success', 'Успешно создано');
 
 		return redirect()->route($this->route_path.'.create')->with('success', trans('main.created_model'));
 	}
