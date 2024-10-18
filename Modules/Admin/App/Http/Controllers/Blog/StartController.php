@@ -14,7 +14,7 @@ use Modules\Entity\Actions\Base\DeleteAction as ModelDeleteAction;
 
 use Modules\Entity\Model\Blog\Model as Model;
 use Modules\Admin\App\Http\Requests\RoleRequest;
-use RealRashid\SweetAlert\Facades\Alert;
+
 
 class StartController extends Controller {
     use MainCrudMethod;

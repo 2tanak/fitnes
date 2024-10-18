@@ -18,5 +18,5 @@ Alert::image('Image Title!','Image Description','Image URL','Image Width','Image
 Alert::html('Html Title', 'Html Code', 'Type');
 Alert::toast('Toast Message', 'Toast Type');
 
-"use RealRashid\SweetAlert\Facades\Alert" был перенесен в StartController, удален из методрв create, delete,update
+"use RealRashid\SweetAlert\Facades\Alert" был перенесен в методрв create, delete,update
 

@@ -4,7 +4,7 @@ namespace Modules\Admin\Traits;
 
 use Illuminate\Http\Request;
 use App\Models\User;
-
+use RealRashid\SweetAlert\Facades\Alert;
 
 
 
