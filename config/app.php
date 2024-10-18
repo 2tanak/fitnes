@@ -172,6 +172,7 @@ return [
 		App\Services\Route\RouteServiceProvider::class,
         RealRashid\SweetAlert\SweetAlertServiceProvider::class,
         Intervention\Image\ImageServiceProvider::class,
+        RealRashid\SweetAlert\SweetAlertServiceProvider::class,
     ])->toArray(),
 
     /*
@@ -191,6 +192,7 @@ return [
 		'Router' => \App\Services\Route\RouteService::class,
         'Alert' => RealRashid\SweetAlert\Facades\Alert::class,
         'Image' => Intervention\Image\Facades\Image::class,
+        'Alert' => RealRashid\SweetAlert\Facades\Alert::class
     ])->toArray(),
 
 ];

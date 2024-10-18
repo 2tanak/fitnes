@@ -7,7 +7,6 @@ use App\Models\User;
 //use App\Models\Option;
 use Illuminate\Support\Facades\Hash;
 use Illuminate\Support\Str;
-use RealRashid\SweetAlert\Facades\Alert;
 
 trait MainListMethod
 {

@@ -5,7 +5,7 @@ use PageService;
 use App\Helper\CurrentLang;
 use Illuminate\Http\Request;
 use Modules\Entity\ModelParent;
-use RealRashid\SweetAlert\Facades\Alert;
+
 use Modules\Admin\App\Http\Requests\RoleRequest;
 
 trait MainUpdateMethod  {

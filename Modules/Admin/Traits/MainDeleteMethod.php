@@ -4,7 +4,7 @@ namespace Modules\Admin\Traits;
 use Illuminate\Http\Request;
 use Modules\Entity\ModelParent;
 use Spatie\Permission\Models\Role;
-use RealRashid\SweetAlert\Facades\Alert;
+
 trait MainDeleteMethod  {
 	
 	
