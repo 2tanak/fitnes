@@ -16,7 +16,7 @@ trait MainCreateMethod
 		 $validator = $this->validator($request->all());
 		if ($validator->fails()) {
 			//dd($request->all());
-				Alert::error('Validation errors', 'Check the fields');
+				//Alert::error('Validation errors', 'Check the fields');
 				return redirect()->back()->withErrors($validator);
 			};
 		

@@ -1,7 +1,5 @@
 <div>
-  @php
-    //dd($model->files);
-  @endphp
+
   <label><b>Photo</b></label>
   @if ($errors->has('photo'))
   <span class="help-block">
@@ -9,6 +7,7 @@
   </span>
   @endif
   <input type="file" value="{{$model->img}}" name='photo' placeholder="Фото" class="form-control" />
+
   @if (isset($model->files->id))
   уже загружено <a href="{{Storage::disk('public')->url($model->files->small)}}" target="_blank">просмотреть</a>
   @else

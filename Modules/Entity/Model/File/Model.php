@@ -9,7 +9,7 @@ use App\Models\Lang;
 
 
 class Model extends ModelParent {
-    protected $table = 'images';
+    protected $table = 'files';
 	//protected $with = ['files'];
 	protected $fillable
         = [
