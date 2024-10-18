@@ -55,6 +55,11 @@ button{
 	   @include('admin::__block.page_header')
 	    @include('sweetalert::alert')
 	       <div class="content">
+		   @if(session()->has('error'))
+             <div class="alert alert-danger">
+             {{ session()->get('error') }}
+           </div>
+           @endif
 		      @include('sweetalert::alert')
 		       @yield('content')
 					@yield('left_lang')
