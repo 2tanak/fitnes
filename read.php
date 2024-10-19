@@ -21,3 +21,6 @@ Alert::toast('Toast Message', 'Toast Type');
 "use RealRashid\SweetAlert\Facades\Alert" был перенесен в методрв create, delete,update
 
 в layout admin добавил блок для вывода сессий
+
+commit languages_panel
+создал заполнение на русском и иерстранном языке

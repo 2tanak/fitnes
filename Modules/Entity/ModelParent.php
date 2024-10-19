@@ -42,52 +42,25 @@ class ModelParent extends Model {
 		$lang = CurrentLang::url();
 		
 		$route = Route::currentRouteName();
-		$ar=explode('_',$route);
+	  
+		$ar=explode('.',$route);
+		
         if(in_array('create',$ar)){
          return $v;
 		}
 		
-		if($lang!=false){
-			if($lang){
-				$this->lang = $lang;
-			}
-			
-		}
-		
-		 if ($this->lang == '' || $this->lang == 'ru'){
+		if ($this->lang == '' || $this->lang == 'ru'){
             return $v;
 		 }
 		
-		 if(!isset($this->id)){
-			 return $v;
-		 }
-			 
 		
-		$table_name = $this->getTable();
-       
-        if (strpos($table_name, 'lib_') !== false || strpos($table_name, 'general') !== false){
-			
-            $lang = $this->relTrans()->where(['lang'=>$this->lang])->first();
-            if (!$lang){
-                $lang =  $this->relTrans()->updateOrCreate([
-                    'lang' => $this->lang,
-                    'table_name' => $table_name,
-                    'el_id' => $this->id
-                ], ['lang' => $this->lang, 'table_name' => $table_name]);
-            }
-            
-        }
-        else{
-			 $lang = Cache::get($lang.$this->getNameSpace());
-		 //$lang = $this->relTrans()->firstOrCreate(['lang'=>$this->lang]);
-		 /*
-		 $lang = Cache::rememberForever($lang.$this->getNameSpace(), function () {
-			return $this->relTrans()->firstOrCreate(['lang'=>$this->lang]);
-          });
-		  */
-		}
+			 
+	    $lang = Cache::get($lang.$this->getNameSpace());
+		
+		
 		
         if (!isset($lang->{$field})) {
+		
             return $v;
 		}
 

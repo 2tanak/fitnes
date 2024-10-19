@@ -5,6 +5,7 @@ namespace Modules\Entity\App\Providers;
 use Illuminate\Support\Facades\Blade;
 use Illuminate\Support\ServiceProvider;
 
+
 class EntityServiceProvider extends ServiceProvider
 {
     protected string $moduleName = 'Entity';
@@ -30,6 +31,7 @@ class EntityServiceProvider extends ServiceProvider
     public function register(): void
     {
         $this->app->register(RouteServiceProvider::class);
+		
     }
 
     /**

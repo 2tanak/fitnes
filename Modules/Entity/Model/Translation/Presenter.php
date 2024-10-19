@@ -28,9 +28,9 @@ function the_excerpt($text){
 		 
 		return $this->getTransField('name', $v);
     }
-	 function getDescriptionAttribute($v){
+	 function getTextAttribute($v){
 		 
-		return $this->getTransField('description', $v);
+		return $this->getTransField('text', $v);
     }
 }
 
