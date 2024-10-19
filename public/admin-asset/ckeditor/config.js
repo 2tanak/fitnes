@@ -40,5 +40,6 @@ CKEDITOR.editorConfig = function( config ) {
 		    //config.removePlugins = 'spellchecker, about, save, newpage, print, templates, scayt, flash, pagebreak, smiley,preview,find'
 		config.extraPlugins = ['justify','btgrid','link'];
 		//config.extraPlugins = 'btgrid';
-
+config.FormatOutput = false ;
+config.image_previewText = ' ';
 };

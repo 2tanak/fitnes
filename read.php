@@ -28,3 +28,13 @@ commit languages_panel
 commit languages_resource_lang
 в файле left_lang поставил блок @if($lang === 'kkkkkkkkkkkkkkkkkkk'), чтобы скрыть плашку с языками
 cоздал файлы в папке title, button, list, navbar,sidebar,modal
+
+
+comments editor_clear_folder
+написал функцию очистки парки, куда текстовый редакор складывает изображения
+если в папке есть изображения которые нет в редакторе то папка удаляется
+функция не активна, лежит в Modules\Entity\Actions\Base\UpdateAction.php
+функция называется clear_folder_editor
+в будущем прицепить на очереди
+также работает загрузка изображений в редактор
+изменил код Modules\Admin\Http\Controllers\Edit\CkeditorController.php

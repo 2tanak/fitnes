@@ -69,4 +69,7 @@ button{
 	</div>
 </div>
  @include('admin::__block.footer')
+ @section('js_block')
+    @show
 </body>
+</html>

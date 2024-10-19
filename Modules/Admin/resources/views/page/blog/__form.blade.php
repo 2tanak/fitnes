@@ -61,7 +61,7 @@
     <strong style='color:#a94442'>{{ $errors->first('description') }}</strong>
   </span>
   @endif
-    <textarea class="form-control" id="text" name="description">
+    <textarea class="form-control" id="description" name="description">
 		  @if($model->description)
 		     {{ $model->description }}
 	      @else
@@ -79,7 +79,7 @@
 @section('js_block')
 @parent
 <script>
-  CKEDITOR.replace('text', {
+  CKEDITOR.replace('description', {
     filebrowserUploadUrl: "{{ route('blog-editor', ['_token' => csrf_token()]) }}",
     filebrowserUploadMethod: 'form',
 

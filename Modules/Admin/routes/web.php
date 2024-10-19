@@ -18,7 +18,7 @@ Route::prefix('admin')->group(function() {
 
 
 Route::group(['namespace' => 'Edit'], function () {
-Route::any('blog-editor',['uses' => 'CkeditorController@blog'])->name('blog-editor');
+Route::any('blog-editor',['uses' => 'CkeditorController@ckeditor'])->name('blog-editor');
 
 Route::any('drobsone-send-blog',['uses' => 'CkeditorController@blog'])->name('drobsone-send-blog');
 
