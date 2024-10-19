@@ -1,7 +1,7 @@
 <!-- Main navbar -->
 <div class="navbar navbar-inverse bg-indigo">
     <div class="navbar-header">
-        <a class="navbar-brand" href="{{ route('admin_index') }}">Админка </a>
+        <a class="navbar-brand" href="{{ route('admin_index') }}">@lang('navbar.page_name') </a>
 
         <ul class="nav navbar-nav visible-xs-block">
             <li><a data-toggle="collapse" data-target="#navbar-mobile"><i class="icon-tree5"></i></a></li>
@@ -22,7 +22,7 @@
                     </a>
                     <ul class="dropdown-menu width-200">
                        
-                        <li ><a href="{{ route('admin_logout') }}" > выйти</a></li>
+                        <li ><a href="{{ route('admin_logout') }}" > @lang('navbar.logout')</a></li>
                     </ul>
                 </li>
                         

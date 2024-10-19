@@ -28,19 +28,6 @@ class StartController extends Controller {
     protected $action_delete = ModelDeleteAction::class;
 	
 	
-   protected function validator(array $data)
-    {
-	 $messages = [
-      'description.required' => 'The field must be filled in',
-	  'name.required' => 'The field must be filled in',
-	  'photo.mimes' => 'Разрешены расширения: jpeg,png,svg',
-	  'photo.files' => 'Должно быть файлом',
-     ];
-	   return \Validator::make($data, [
-		 'name' => 'required|string',
-         'photo' => 'nullable|sometimes|file|mimes:jpeg,png,svg',
-		 'description' => 'required|string',
-          ],$messages);
-    }
+ 
 	
 }

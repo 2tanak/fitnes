@@ -14,15 +14,15 @@
 					<tr>
 						<th >id</th>
 						
-						<th >name</th>
-						<th >description</th>
+						<th >@lang('list.table.name')</th>
+						<th >@lang('list.table.description')</th>
 						
 					 <th width="150">
 				
 							<a href="{{ route($route_path.'.create') }}"  
 							class="btn btn-sm  bg-success"
 							style="width:150px;"
-							>Add</a>
+							>@lang('button.add')</a>
 						
 							
 							 
@@ -44,7 +44,7 @@
 										<i class="icon-menu7"></i> 
 									</button>
 									<ul class="dropdown-menu dropdown-menu-right">
-									<li><a href="{{ route($route_path.'.edit', $i) }}">Change</a></li>
+									<li><a href="{{ route($route_path.'.edit', $i) }}">@lang('modal.table.change')</a></li>
                                    <li class="divider"></li>
 										<li>
 										  <form method="POST" action="{{route($route_path.'.destroy', $i) }}" onsubmit="return confirm('Удалить ?')"> 
@@ -52,7 +52,7 @@
 										  @method('DELETE')
 										  
 										  <button type="submit">
-										   delete
+										  @lang('modal.table.delete')
 										  </button>
 										 
 										  </form>

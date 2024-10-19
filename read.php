@@ -24,3 +24,7 @@ Alert::toast('Toast Message', 'Toast Type');
 
 commit languages_panel
 создал заполнение на русском и иерстранном языке
+
+commit languages_resource_lang
+в файле left_lang поставил блок @if($lang === 'kkkkkkkkkkkkkkkkkkk'), чтобы скрыть плашку с языками
+cоздал файлы в папке title, button, list, navbar,sidebar,modal

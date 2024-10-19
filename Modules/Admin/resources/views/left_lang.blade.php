@@ -1,3 +1,5 @@
+
+@if($lang === 'kkkkkkkkkkkkkkkkkkk')
 <ul class="dropdown-menu dropdown-menu-xs" style="display: block; position: static; width: 100%; margin-top: 0; float: none; padding-top: 0px;">
 
 
@@ -17,3 +19,4 @@
 	
     @endforeach
 </ul>
+@endif

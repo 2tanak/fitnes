@@ -12,12 +12,12 @@
                 <div class="panel-body">
                     <form action="{{route($route_path.'.store')}}" method="post" enctype="multipart/form-data" class="need_validate_form " novalidate>
                     @php
-				    $disabled = true;
-				   @endphp
+				      $disabled = true;
+				     @endphp
 				   
                         @include('admin::page.'.$rout.'.__form')
                          <br><br>
-                        <button type="submit" class="btn btn-primary pull-left">Save</button>
+                        <button type="submit" class="btn btn-primary pull-left">@lang('button.save')</button>
                         <input type="hidden" name="_token" value="{{ csrf_token() }}">
                     </form>
                 </div>

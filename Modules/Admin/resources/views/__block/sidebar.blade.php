@@ -9,7 +9,7 @@
 					</a>
 					  <div class="media-body">
                         <span class="media-heading text-semibold">
-						Логин:&nbsp&nbsp {{ Auth::user()->name }}</span>
+						@lang('sidebar.login'):&nbsp&nbsp {{ Auth::user()->name }}</span>
                         <div class="text-size-mini text-muted">
                             <!----{{ Auth::user()->type_name }}---->
                         </div>
@@ -37,13 +37,13 @@
 	  <li style="">
        <a   style="" href="#">
 	   <i class="icon-city"></i>
-	   <span>Блог
+	   <span> @lang('sidebar.blog.title')
 	   </span></a>
 	     <ul class="hidden-ul">
 		
 	      <li>
             <a href="{{route('blog.index')}}">
-	          <span>Статьи </span>
+	          <span>@lang('sidebar.blog.name') </span>
 	        </a>
 	      </li>
 		 
